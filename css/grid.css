@@ -1,62 +1,3 @@
-/* Tailwind and Bootstrap use px for media queries, with foundation using em
-for this library we will stick with pixels */
-
-/* ---General rules - scales images, videos to size of container--- */
-img, embed, object, video, picture {
-  max-width: 100%; 
-}
-
-/* ---Change the way the box model works, tells the browser to account for any border and padding in the values you specify for an element's width and height.--- */
-
-html {
-  box-sizing: border-box; 
-}
-
-*, *::before, *::after {
-  box-sizing: inherit; 
-}
-
-/* ---Mini CSS reset--- */
-
-body, p, h1, h2, h3, h4, h5 {
-   margin: 0px; 
-   padding: 0px;
-}
-
-/* ---Utility Classes--- */
-
-.hidden {
-   display: none;
-}
-
-.box {
-   background-color: rgb(59, 59, 59);
-   color: rgb(255, 255, 255);
-   border-radius: 5px;
-   padding: 20px;
-   text-align: center;
-   margin-top: 10px;
-   margin-bottom:10px;
- }
-
- .hero{
-   height: 400px;
- }
-
- .box_service{
-   height: 150px;
- }
-
- .box_products{
-   height: 200px;
- }
-
- .footer{
-   height: 150px;
- }
-
-
-
 /* ---Mobile Library Grid Styles--- */
 
 .full-width-grid-con {
@@ -70,8 +11,7 @@ body, p, h1, h2, h3, h4, h5 {
    display: grid;
    grid-template-columns: repeat(4, minmax(0, 1fr));
    grid-column-gap: 30px;
-   max-width: 1200px;
-   margin: 0 auto;
+   margin: 0px auto;
    padding-left: 15px;
    padding-right: 15px;
 }
@@ -112,6 +52,7 @@ body, p, h1, h2, h3, h4, h5 {
       display: grid; 
       grid-template-columns: repeat(12, minmax(0, 1fr));
       grid-column-gap: 20px;
+      margin: 0px auto;
       padding-left: 15px;
       padding-right: 15px;
    }
@@ -176,9 +117,10 @@ body, p, h1, h2, h3, h4, h5 {
    .grid-con { 
       display: grid; 
       grid-template-columns: repeat(12, minmax(0, 1fr));
-      grid-column-gap: 30px;
-      padding-left: 15px;
-      padding-right: 15px;
+      grid-column-gap: 34px;
+      margin: 0px auto;
+      padding-left: 50px;
+      padding-right: 50px;
    }
 
    .l-col-span-1	{grid-column: span 1 / span 1;}
